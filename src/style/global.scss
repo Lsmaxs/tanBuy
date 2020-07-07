@@ -1,0 +1,48 @@
+@import "global/reset";
+@import "global/common";
+@import "global/iphonex";
+@import "./config";
+
+.border-top {
+  position: relative;
+  &::after {
+    width: 200%;
+    left: -50%;
+    top: 0;
+    @include setBorder($lineColor);
+    border-top-width: 1px;
+  }
+}
+
+.border-right {
+  position: relative;
+  &::after {
+    height: 200%;
+    top: -50%;
+    right: 0%;
+    @include setBorder($lineColor);
+    border-right-width: 1px;
+  }
+}
+
+.border-bottom {
+  position: relative;
+  &::before {
+    width: 200%;
+    left: -50%;
+    bottom: 0;
+    @include setBorder($lineColor);
+    border-bottom-width: 1px;
+  }
+}
+
+.border-left {
+  position: relative;
+  &::before {
+    height: 200%;
+    top: -50%;
+    left: 0%;
+    @include setBorder($lineColor);
+    border-left-width: 1px;
+  }
+}

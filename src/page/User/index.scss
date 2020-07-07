@@ -1,0 +1,74 @@
+@import '../../style/config.scss';
+
+
+.user-warp{
+    
+    .user-info{
+        padding: .3rem .3rem;
+        background: $itemBackground;
+        display: flex;
+        align-items: center;
+
+        img{
+            display: block;
+            width: .8rem;
+            height: .8rem;
+            margin-right: .3rem;
+        }
+
+        span{
+            @include setFontStyle('text-sm');
+            color: $globalTitleColor;
+        }
+    }
+    .card{
+        margin: .2rem .3rem;
+        border-radius: 6px;
+        background: #fff;
+        overflow: hidden;
+        
+
+        .card-header{
+            display: flex;
+            align-items: center;
+            padding: .2rem;
+            justify-content: space-between;
+
+            h3{
+                @include setFontStyle('title-ms');
+                font-weight: 500;
+                color:$globalTitleColor;
+            }
+
+            span{
+                display: flex;
+                align-items: center;
+                color:$gray;
+            }
+        
+        }
+
+        .card-content{
+            padding:0 .2rem .2rem;
+            display: flex;
+
+            .order-item{
+                flex:1;
+                text-align: center;
+            }
+        }
+
+        .ev-list{
+            display: flex;
+            justify-content: space-between;
+            padding: .2rem .3rem;
+            align-items: center;
+            @include setFontStyle('title-xs');
+            font-weight: 500;
+            color:$globalTitleColor;
+
+        }
+    }
+
+   
+}

@@ -1,0 +1,86 @@
+/**
+ * Created by Robin Hsu on 16/6/27.
+ * 一些的东西，以前的模版也在这里面，不过还是抽出来吧。。。
+ * filePath sass/common.scss
+ * Last edited by Robin Hsu on 16/10/20.
+ */
+@import "template";
+
+body {
+  font-family: -apple-system, Helvetica, 'Hiragino Sans GB W3', arial, sans-serif;
+  min-width: 320px;
+  margin: 0 auto;
+  color: $defaultFontColor;
+  background-color: $defaultBackgroundColor;
+  font-size: $defaultFontSize;
+}
+
+.hide {
+  display: none !important;
+}
+
+.left, .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.left {
+  left: 0;
+  right: auto;
+}
+
+.clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+  visibility: hidden !important;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .35);
+  z-index: 1000;
+
+  &.transparent {
+    opacity: 0;
+  }
+}
+
+.mobile-border-px {
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+
+.mobile-type-ios {
+  .mobile-border-px {
+    position: relative;
+    border: 0 !important;
+    &::after { 
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scale(.5);
+      -ms-transform: scale(.5);
+      transform: scale(.5);
+      width: 200%;
+      height: 200%;
+      border: 1px solid #666;
+      box-sizing: border-box;
+    }
+  }
+}

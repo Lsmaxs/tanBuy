@@ -1,0 +1,30 @@
+@import '../../style/config.scss';
+
+.com-header{
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    // z-index: 9;
+    width: 100%;
+    display: flex;
+    padding: .2rem .2rem;
+    box-sizing:border-box;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+   
+    div{
+        flex: 1;
+        text-align: center;
+
+        img{
+            height: .6rem;
+            vertical-align: middle;
+        }
+    }
+
+    .header-icon {
+        width: .4rem;
+        height: .4rem;
+    }
+}

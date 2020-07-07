@@ -1,0 +1,40 @@
+@import '../../style/config.scss';
+
+.com-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    z-index: 9;
+
+    ul{
+        display: flex;
+        align-items: center;
+        // height: 1rem;
+
+        li{
+            flex:1 0 ;
+            padding: .2rem .3rem .1rem;
+        }
+    }
+
+    .com-footer-item{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $globalTitleColor;
+        @include setFontStyle('text-xs');
+
+        &.active{
+            color:$themeMainColor;
+        }
+        
+        .icon{
+            width: .4rem;
+            height: .4rem;
+        }
+    }
+    
+}

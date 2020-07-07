@@ -381,6 +381,13 @@ module.exports = function(webpackEnv) {
                         },
                       },
                     },
+                    [
+                      require.resolve('babel-plugin-import'),// 导入 import 插件
+                      {
+                        libraryName: 'antd-mobile',   //暴露antd-mobile
+                        style: 'css'
+                      }
+                    ],
                   ],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
@@ -501,6 +508,14 @@ module.exports = function(webpackEnv) {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
             },
+            {
+              test: /\.svg$/,
+              loader: 'svg-sprite-loader',
+              include: [
+                require.resolve('antd-mobile').replace(/warn\.js$/,''),
+                paths.appSrc
+              ]
+            }
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],

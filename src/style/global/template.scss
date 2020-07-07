@@ -1,0 +1,80 @@
+/**
+ * Created by Robin Hsu on 16/10/20.
+ * 一些以前放在common里面的东西，主要是sass的一些模版参数
+ * filePath: sass/template.scss
+ * Last edited by Robin Hsu on 16/10/24.
+ */
+
+$defaultFontColor: #333333;
+$defaultFontSize: .24rem;
+$defaultBackgroundColor: #f0f0f0;
+$defaultBorderColor: #e1e1e1;
+$defaultShadows: 0 .02rem .04rem 0 #d8d8d8;
+
+$gray1: #666666;
+$blue1: #3692e7;
+$blue2: #3758b7;
+$blue3: #4663cf;
+$red1: #e00346;
+$red2: #fe6270;
+$red3: #f70053;
+$red4: #e8004c;
+$orange1: #f88602;
+
+%webkitBox {
+  display: -webkit-box;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+}
+
+%clear {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+%arrow {
+  @extend %displayBlock;
+  width: .16rem;
+  height: .16rem;
+  border-right: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+%tick {
+  @extend %displayBlock;
+  width: .16rem;
+  height: .08rem;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+%displayBlock {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+%translateY {
+  @extend %displayBlock;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%translateXY {
+  @extend %displayBlock;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+

@@ -1,0 +1,48 @@
+@import '../../style/config.scss';
+
+.goods-item{
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 .2rem .3rem;
+    // border: 1px solid #f1f1f1;
+
+    .goods-img{
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .goods-des{
+        margin-top: .1rem;
+        height: 3em;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        @include setFontStyle('text-xs');
+        color: $globalTitleColor;
+    }
+
+    .goods-price{
+        padding-top: .1rem;
+
+        .current-price{
+            @include setFontStyle('text-sm');
+            font-weight: 600;
+            color: $poiMainColor;
+            text-decoration: none;
+
+        }
+        .original-price{
+            @include setFontStyle('text-xxs');
+            color: $gray;
+            margin-left: .1rem;
+        }
+    }
+}

@@ -1,0 +1,321 @@
+[
+    {
+        "id": 228586,
+        "categorys": "101",
+        "name": "护肤",
+        "billboard": {
+            "direction": 2,
+            "name": "查看全部",
+            "params": {
+                "title": "美妆 > 护肤",
+                "c": "101"
+            },
+            "pic": "",
+            "target": true
+        },
+        "subNavigations": [
+            {
+                "id": 248170,
+                "categorys": "10115",
+                "name": "套装",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/620803c3a882c2c17493b16d9109fb44.jpg"
+            },
+            {
+                "id": 228592,
+                "categorys": "10101",
+                "name": "爽肤水",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/39c181b9486ad109d3e194cb66f526e4.jpg"
+            },
+            {
+                "id": 228591,
+                "categorys": "10102",
+                "name": "洁面",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/26482845513489f69d7f04f9272af530.jpg"
+            },
+            {
+                "id": 228593,
+                "categorys": "10103",
+                "name": "精华",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/953b38c93c9ecc4124b48700ff59c13f.jpg"
+            },
+            {
+                "id": 228594,
+                "categorys": "10104",
+                "name": "乳液",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/96f102c7ffea679680c015181d871f38.jpg"
+            },
+            {
+                "id": 228595,
+                "categorys": "10105",
+                "name": "面霜",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/72c3ee41d2ab05af1ecc18ac51463252.jpg"
+            },
+            {
+                "id": 228597,
+                "categorys": "10106",
+                "name": "眼部护理",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/2ba806b9a5e6980feeed53dd80dbc309.jpg"
+            },
+            {
+                "id": 228596,
+                "categorys": "10107",
+                "name": "防晒隔离",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/a9b13711669217f415322fe670f117db.jpg"
+            },
+            {
+                "id": 228601,
+                "categorys": "10108",
+                "name": "面膜",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/28059d0171653eccc3709e35cb253083.jpg"
+            },
+            {
+                "id": 248172,
+                "categorys": "10109",
+                "name": "卸妆",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/f368b3358ad65a26282d749b76b984ee.jpg"
+            },
+            {
+                "id": 228600,
+                "categorys": "10110",
+                "name": "唇部护理",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/9dfb787e461c619c0479969e40db83ba.jpg"
+            },
+            {
+                "id": 228599,
+                "categorys": "10111",
+                "name": "手部护理",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/5a6b74f4d2fce55429475bca1610bb6d.jpg"
+            },
+            {
+                "id": 237391,
+                "categorys": "10112",
+                "name": "晚霜",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/547f151d416ec25fc56e4a76cd296ec4.jpg"
+            },
+            {
+                "id": 228603,
+                "categorys": "10113",
+                "name": "磨砂角质",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/3230f0e548a7b32a887ef169b6abbcaf.jpg"
+            },
+            {
+                "id": 248188,
+                "categorys": "10114",
+                "name": "精油",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/f96a09500ab7184b735106e82ad024aa.jpg"
+            }
+        ],
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 228588,
+        "categorys": "102",
+        "name": "彩妆",
+        "billboard": {
+            "direction": 2,
+            "name": "查看全部",
+            "params": {
+                "title": "美妆 > 彩妆",
+                "c": "102"
+            },
+            "pic": "",
+            "target": true
+        },
+        "subNavigations": [
+            {
+                "id": 228606,
+                "categorys": "10201",
+                "name": "粉底/遮瑕",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/cecfbf391de2659dd5276e4513773f0e.jpg"
+            },
+            {
+                "id": 228611,
+                "categorys": "10202",
+                "name": "唇部彩妆",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/5228a2834a6654d1c20fa7b205b9b208.jpg"
+            },
+            {
+                "id": 228605,
+                "categorys": "10204",
+                "name": "BB霜/CC霜",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/2c145403b525d0b56e56264e5139336f.jpg"
+            },
+            {
+                "id": 228608,
+                "categorys": "10205",
+                "name": "粉饼",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/50c997f3dd81e8a8601480ec82528515.jpg"
+            },
+            {
+                "id": 228607,
+                "categorys": "10206",
+                "name": "散粉",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/6a4af3e16380d58d758ce1ac94516756.jpg"
+            },
+            {
+                "id": 228609,
+                "categorys": "10207",
+                "name": "腮红",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/91d8b858eb0bb7fa9d90cf204aed7596.jpg"
+            },
+            {
+                "id": 228604,
+                "categorys": "10209",
+                "name": "妆前乳",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/c6198b486ae922e25b2e6b9ab2688934.jpg"
+            },
+            {
+                "id": 248169,
+                "categorys": "10211",
+                "name": "套装",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/8b79c0e7cd77224146b3bf9a25d8fccd.jpg"
+            },
+            {
+                "id": 228613,
+                "categorys": "10210",
+                "name": "彩妆工具",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/561fa5ac342b6358a223c7fbf8a48666.jpg"
+            }
+        ],
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 228587,
+        "categorys": "103",
+        "name": "身体护理",
+        "billboard": {
+            "direction": 2,
+            "name": "查看全部",
+            "params": {
+                "title": "美妆 > 身体护理",
+                "c": "103"
+            },
+            "pic": "",
+            "target": true
+        },
+        "subNavigations": [
+            {
+                "id": 228615,
+                "categorys": "10301",
+                "name": "身体清洁",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/5f9fb0dfcbad5f078142e3ab1f544ad4.jpg"
+            },
+            {
+                "id": 228616,
+                "categorys": "10302",
+                "name": "身体乳液",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/ee9aa193e77d1f59cefc966f80125124.jpg"
+            },
+            {
+                "id": 228617,
+                "categorys": "10303",
+                "name": "身体修复",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/cc36851d5217140991247db5f39c63a5.jpg"
+            },
+            {
+                "id": 228619,
+                "categorys": "10307",
+                "name": "脚部护理",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/eefe824a710c66528dd39675f749aafd.jpg"
+            },
+            {
+                "id": 248187,
+                "categorys": "10309",
+                "name": "套装",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/94a515f6cc3e309ba33b40387b77ebeb.jpg"
+            }
+        ],
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 228589,
+        "categorys": "104",
+        "name": "发部护理",
+        "billboard": {
+            "direction": 2,
+            "name": "查看全部",
+            "params": {
+                "title": "美妆 > 发部护理",
+                "c": "104"
+            },
+            "pic": "",
+            "target": true
+        },
+        "subNavigations": [
+            {
+                "id": 228621,
+                "categorys": "10401",
+                "name": "洗发",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/86115cb6882787a055707a1f0c59b6bc.jpg"
+            }
+        ],
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 228590,
+        "categorys": "105",
+        "name": "男士护理",
+        "billboard": {
+            "direction": 2,
+            "name": "查看全部",
+            "params": {
+                "title": "美妆 > 男士护理",
+                "c": "105"
+            },
+            "pic": "",
+            "target": true
+        },
+        "subNavigations": [
+            {
+                "id": 248186,
+                "categorys": "10506",
+                "name": "套装",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/f6876b73f05079daeafe78fe882b0009.jpg"
+            },
+            {
+                "id": 228625,
+                "categorys": "10501",
+                "name": "清洁",
+                "virtualCategorys": "",
+                "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/61ced7173ef7c441351b5205a77481e0.jpg"
+            }
+        ],
+        "virtualCategorys": "",
+        "pic": ""
+    }
+]

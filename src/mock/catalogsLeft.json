@@ -1,0 +1,91 @@
+[
+    {
+        "id": 225510,
+        "categorys": "2",
+        "name": "美妆",
+        "billboard": {
+            "direction": 0,
+            "name": "美妆 225510",
+            "params": null,
+            "pic": "https://pic.cdfg.com.cn/assets/upload/img/1245358831268c7e2a932517007b173d.png",
+            "target": true
+        },
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/d7dc9825c14f0cd4ce66d717b8b8f576.jpg"
+    },
+    {
+        "id": 225509,
+        "categorys": "3",
+        "name": "香水",
+        "billboard": {
+            "direction": 0,
+            "name": "香水 225509",
+            "params": null,
+            "pic": "https://pic.cdfg.com.cn/assets/upload/img/088b7eebfd4809024a782a4e4fd29495.png",
+            "target": true
+        },
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 225511,
+        "categorys": "5",
+        "name": "腕表",
+        "billboard": "",
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 10001,
+        "categorys": "4",
+        "name": "酒类",
+        "billboard": {
+            "direction": 0,
+            "name": "酒类 10001",
+            "params": null,
+            "pic": "https://pic.cdfg.com.cn/assets/upload/img/f033b79aa880feda28e79b2c25ca3a29.jpg",
+            "target": true
+        },
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 225512,
+        "categorys": "6",
+        "name": "箱包",
+        "billboard": "",
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 225513,
+        "categorys": "7",
+        "name": "配饰",
+        "billboard": "",
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": ""
+    },
+    {
+        "id": 225515,
+        "categorys": "9",
+        "name": "生活",
+        "billboard": "",
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/088b7eebfd4809024a782a4e4fd29495.png"
+    },
+    {
+        "id": 299188,
+        "categorys": "80514",
+        "name": "食品",
+        "subNavigations": null,
+        "virtualCategorys": "",
+        "pic": "https://pic.cdfg.com.cn/assets/upload/navicon/088b7eebfd4809024a782a4e4fd29495.png"
+    }
+]

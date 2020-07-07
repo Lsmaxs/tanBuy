@@ -1,0 +1,67 @@
+
+// 主题颜色
+$themeMainColor:#2871f7;
+$poiMainColor:#FF5424;
+$backgroundColor: #F0F3F7;
+
+// 全局字体色
+$globalTitleColor:#333333;
+$bodyBackgroud:#EFF2F8;
+$itemBackground: #FFF;
+$contentBackgroud:#F9FBFE;
+$lineColor:#eaebed;
+$disabledColor:#d8d9dd;
+$easyRentColor: #FFEECD;
+$easyRentBackground: #FFFAF0;
+$easyRentBackgroundBlue: #102298;
+
+$borderColor: transparentize($color: #C2C5D2, $amount: 0.6);
+$gray:#696E7C;
+$lightGray:#9EA1B0;
+$navyBlue:#576CBA;
+$yellow:#FFB900;
+$white: #fff;
+$backgroundBlue: #e5eeff;
+$iconBackgroundBlue:#e1e8f9;
+$iconBorderOrange:#FD5E29;
+$iconBackgroundOrange:#FFE2D9;
+$iconBorderBlue:#d5ddf4;
+$iconBorderGreen: #1AC1C7;
+$iconBackgroundGreen: #e5f7f8;
+$iconfontGreen: #21A0A5;
+$borderColorGray: #8D91A2;
+$iconBorderGolden: #A17946;
+$iconBackgroundGolden: #FDF3E0;
+$iconfontGolden: #A17946;
+
+// 全局公用色
+$globalErrorColor: #CA0808;
+$globalWarnColor: #FF8500;
+$globalSuccessColor:#2CB989;
+
+// 字体大小
+@mixin fontStyle($fontSize:.24rem,$fontWidth:400) {
+    font-size: $fontSize;
+    font-weight: $fontWidth;
+}
+@mixin setFontStyle($size){
+    @if $size == 'sell-price'{ @include fontStyle(.42rem,600) }
+    @if $size == 'title-lg'{ @include fontStyle(.36rem,600) }
+    @if $size == 'title-md'{ @include fontStyle(.34rem,500) }
+    @if $size == 'title-sm'{ @include fontStyle(.28rem,500) }
+    @if $size == 'title-xs'{ @include fontStyle(.26rem,500) }
+    @if $size == 'text-md'{ @include fontStyle(.34rem) }
+    @if $size == 'text-sm'{ @include fontStyle(.28rem) }
+    @if $size == 'text-xs'{ @include fontStyle(.26rem) }
+    @if $size == 'text-x'{ @include fontStyle(.24rem) }
+    @if $size == 'text-xxs'{ @include fontStyle(.22rem) }
+    @if $size == 'text-xxxs'{ @include fontStyle(.2rem) }
+}
+
+@mixin setBorder($border-color: $contentBackgroud){
+    content: '';
+    position: absolute;
+    border: 0 solid $border-color;
+    transform: scale(.5);
+    transform-origin: center center;
+}
