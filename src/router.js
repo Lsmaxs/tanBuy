@@ -8,6 +8,8 @@ const history = createHistory();
 
 const categories = asyncComponent(() => import("./page/Categories/categories"));
 const user = asyncComponent(() => import("./page/User/user"));
+const search = asyncComponent(() => import("./page/Search/search"));
+const goodsDetails = asyncComponent(() => import("./page/GoodsDetails/goodsDetails"));
 
 
 const RouteConfig = (
@@ -16,6 +18,8 @@ const RouteConfig = (
             <Route path="/"  exact component={index} />
             <Route path="/categories" component={categories} />
             <Route path="/user" component={user} />  
+            <Route path="/search" component={search} />  
+            <Route path="/goodsDetails" component={goodsDetails} />  
         </>
     </Router>
 );

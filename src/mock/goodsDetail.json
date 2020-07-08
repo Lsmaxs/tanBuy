@@ -1,0 +1,33 @@
+{
+    "id": 3529138,
+    "styleId": 50649,
+    "salesPrice": {
+        "type": 0,
+        "name": "免税价",
+        "value": "235.0000"
+    },
+    "contrastPrice": null,
+    "count": 1,
+    "saleCount": 103,
+    "isSellable": true,
+    "sellerGoodRate": 0.0,
+    "isCollect": false,
+    "limitNumber": 3,
+    "brandLimitNumber": -1,
+    "rules": [],
+    "tags": null,
+    "flashSale": null,
+    "stockTips": "",
+    "remarkCount": 0,
+    "remarks": null,
+    "notes": [],
+    "warehouseAlias": "广州T2",
+    "remarkTitle": "",
+    "freightDescription": null,
+    "delivery": {
+        "declare": "<strong>广州机场T2免税店</strong> 请至少提前1天下单<br/> <strong>注：购买时间视下单时段而定，具体说明请查看详情。</strong>",
+        "content": "<p><img title=\"dabc18205a79ce317b0a4383953baa87.jpg\" src=\"https://pic.cdfg.com.cn/assets/upload/article/dabc18205a79ce317b0a4383953baa87.jpg\"/></p>",
+        "declares": null
+    },
+    "limitNumberDescription": "<p><span style=\"color: rgb(34, 34, 34); font-family: Consolas,;\" courier=\"\" lucida=\"\">免税限购：<span style=\"color: rgb(34, 34, 34);\">单行程各单品限购8件，</span>单次入境累计限购8000元（线上及线下消费总和）、酒水类商品限购2件，出境限购请遵守目的地国入境相关规定。未满16岁的青少年禁止购买酒类商品！         </span></p>"
+}

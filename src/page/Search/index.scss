@@ -1,0 +1,41 @@
+
+@import '../../style/config.scss';
+
+
+.search-warp{
+
+    .search-header{
+        background: $itemBackground;
+        padding: .2rem;
+        border:1px solid #f0f0f0;
+
+        .am-search{
+            background: $itemBackground;
+        }
+        .am-search-input{
+            background:  $bodyBackgroud;
+        }
+    }
+
+    .search-content{
+        height: 80vh;
+
+        .search-config{
+            display: flex;
+            align-items: center;
+            background: $itemBackground;
+
+            span{
+                flex:1;
+                @include setFontStyle('text-ms');
+                line-height: 2.8em;
+                text-align: center;
+            }
+        }
+
+        .result-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

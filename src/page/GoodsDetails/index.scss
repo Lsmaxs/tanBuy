@@ -1,0 +1,136 @@
+
+@import '../../style/config.scss';
+
+
+.details-warp{
+
+    .details-carousel{
+
+        .slid-content{
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding-bottom: 1rem; 
+            overflow-y: auto;
+           
+        }
+
+        .detail-header{
+            background: #fff;
+            padding-bottom: .2rem;
+
+            &> img{
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .detail-info{
+                padding: .1rem .3rem;
+                .price-content{
+                    line-height: 2;
+                    color:#FF5424;
+                    @include setFontStyle('title-md');
+                    font-weight: 600;
+                    i{
+                        font-size: .22rem;
+                    }
+                }
+                h3{
+                    margin: .2rem 0;
+                    @include setFontStyle('title-ms');
+                    font-weight: 600;
+                    color: $globalTitleColor;
+                    span{
+                        display: inline-block;
+                        margin-right: .1rem;
+                        padding:0.04rem .08rem; 
+                        background-color: #823e9c;
+                        line-height: 1.2;
+                        font-weight: normal;
+                        color: #fff;
+                    }
+                    
+                }
+
+                .desc{
+                    margin: .2rem 0;
+                    @include setFontStyle('text-ms');
+                    color:#666;
+                }
+
+                .country{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: .3rem;
+                        height: .3rem;
+                        margin-right: .1rem;
+                    }
+                }
+            }
+        }
+
+        .detail-tips-list{
+            margin-top: .2rem;
+            background: #fff;
+            padding: 0 .2rem;
+            font-size: .24rem;
+
+            &>div{
+                padding: .3rem 0 ;
+                display: flex;
+                align-items: center;
+                
+                border-bottom:1px solid #f0f0f0;
+
+                span{
+                    width: .8rem;
+                }
+
+                p{
+                    flex: 1;
+                    
+                }
+            }
+        }
+        
+        .detail-content{
+            margin-top: .2rem;
+
+            img{
+                max-width: 100%;
+            }
+        }
+       
+    }
+
+    .price-bottom{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        max-height: 1rem;
+        display: flex;
+        background: #fff;
+        align-items: center;
+        @include setFontStyle('text-xs');
+       
+
+        .collect, .shopping{
+            width: 1.2rem;
+            text-align: center;
+            
+            .icon{
+                width: .54rem;
+                height: .54rem;
+            }
+        }
+        
+        .submit-btn{
+            flex: 1;
+            border-radius: 0;
+            @include setFontStyle('text-sm');
+        }
+    }
+}

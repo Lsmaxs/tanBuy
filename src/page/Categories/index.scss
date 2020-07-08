@@ -8,7 +8,88 @@
         background: #fff;
 
         .inner{
-            
+            display:flex;
+            background:$bodyBackgroud;
+            padding:.1rem .2rem;
+            align-items: center;
+            @include setFontStyle('title-xs');
+            color:$lightGray;
+        }
+    }
+
+    .categor-main{
+        display: flex;
+        height: 80vh;
+        overflow-y: hidden;
+       
+    }
+
+    .categor-tab{
+        width: 25%;
+        height: 100%;
+        overflow:auto;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+
+
+        .tab-item{
+            line-height: 1rem;
+            padding: 0 .2rem;
+            text-align: center;
+            @include setFontStyle('text-xs');
+            white-space: nowrap;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+
+            &.active{
+                color:$themeMainColor;
+                background: #fff;
+            }
+        }
+    }
+
+    .categor-con{
+        width: 75%;
+        height: 100%;
+        overflow:hidden;
+        overflow-y:auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        background: #fff;
+        background: $itemBackground;
+
+        .content-main{
+            margin: .4rem 0;
+
+            h2{
+                padding-left: .3rem;
+                @include setFontStyle('title-ms');
+                font-weight: 600;;
+            }
+
+            .content-list{
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: .2rem;
+
+                .con-item{
+                    width: 1.4rem;
+                    padding: 0 .2rem .2rem;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    p{
+                        @include setFontStyle('title-ms');
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 

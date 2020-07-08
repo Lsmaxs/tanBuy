@@ -2,9 +2,11 @@
 
 .goods-item{
     position: relative;
-    width: 50%;
+    max-width: 46%;
     box-sizing: border-box;
     padding: 0 .2rem .3rem;
+    background: $itemBackground;
+    margin: .2rem 0 0 .2rem;
     // border: 1px solid #f1f1f1;
 
     .goods-img{

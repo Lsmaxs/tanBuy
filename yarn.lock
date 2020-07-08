@@ -9562,6 +9562,13 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
+react-fullslip@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-fullslip/-/react-fullslip-1.2.3.tgz#4e9ffc811f3cc0ccf5dd3113cd4a4f4d28396073"
+  integrity sha512-wphLmCE9M0hA/vhPzhhPKpX+BqOULPKOhFtM/UDqRHPJhxIjLbSxbFAwqa8ZrtLShUo665/gTqOaGGlPeLYeAA==
+  dependencies:
+    react "^16.4.1"
+
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -9623,7 +9630,7 @@ react-tween-state@^0.1.5:
     raf "^3.1.0"
     tween-functions "^1.0.1"
 
-react@^16.13.1:
+react@^16.13.1, react@^16.4.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
