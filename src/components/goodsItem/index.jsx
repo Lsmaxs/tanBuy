@@ -3,23 +3,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './index.module.scss';
 
-const GoodIstem = (props) => {
+const useGoodIstem = (props) => {
     const goodsItem = props.goods; 
+    const lsData = props.lsData;
+    
+    const handleClick = ()=> {
+        console.log('lsData',lsData)
+        !!lsData && (window.localStorage.setItem('lsParams',lsData))
+    }
+    
     return (
-        <li className={styles['goods-item']} key={goodsItem.goodsId}>
+        <li className={styles['goods-item']} key={goodsItem.goodsId} onClick={()=>{
+            handleClick();
+        }}>
             <Link
-                to={`goodsDetails?goodsId=${goodsItem.goodsId}`}
+                to={`goodsDetails?goodsId=${goodsItem.skuId}`}
             >
                 <div className={styles['goods-img']}>
                     <img src={goodsItem.imgUrl} width="100%" alt="" />
-                </div>
+                { goodsItem.stockNum < 1 &&  <span className={styles["stockend"]}>售罄</span> } 
+            </div>
+            <div className={styles['goods-bottom']}>
                 <p className={styles["goods-des"]}>
-                    {goodsItem.goodsName}
+                    {goodsItem.showTitle}
                 </p>
                 <div className={styles["goods-price"]}>
-                    <ins className={styles["current-price"]}>¥<span>{parseFloat(goodsItem.mallPrice).toFixed(2)}</span></ins>
-                    <del className={styles["original-price"]}>¥<span>{parseFloat(goodsItem.marketPrice).toFixed(2)}</span></del>
+                    <ins className={styles["current-price"]}>¥<span>{parseFloat(goodsItem.activityPrice).toFixed(2)}</span></ins>
+                    <del className={styles["original-price"]}>¥<span>{parseFloat(goodsItem.salePrice).toFixed(2)}</span></del>
                 </div>
+            </div>
             </Link>
         </li>
     )
@@ -27,4 +39,4 @@ const GoodIstem = (props) => {
 
 
 
-export default GoodIstem
+export default useGoodIstem

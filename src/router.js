@@ -1,5 +1,6 @@
 import React from 'react';
 import { Router, Route } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import asyncComponent from 'components/asyncComponents';
 import index from './page/Main/main';
 const createHistory = require('history').createBrowserHistory;
@@ -13,7 +14,7 @@ const goodsDetails = asyncComponent(() => import("./page/GoodsDetails/goodsDetai
 
 
 const RouteConfig = (
-    <Router path="/" history={history}>
+    <BrowserRouter history={history} basename='/cdf/'>
         <>
             <Route path="/"  exact component={index} />
             <Route path="/categories" component={categories} />
@@ -21,6 +22,6 @@ const RouteConfig = (
             <Route path="/search" component={search} />  
             <Route path="/goodsDetails" component={goodsDetails} />  
         </>
-    </Router>
+    </BrowserRouter>
 );
 export default RouteConfig;

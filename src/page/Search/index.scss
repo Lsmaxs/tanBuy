@@ -33,9 +33,19 @@
             }
         }
 
-        .result-list{
+        .list-view-section-body{
             display: flex;
             flex-wrap: wrap;
+        }
+
+        .empty{
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #more{
+            padding:.4rem 0;
+            text-align: center;
         }
     }
 }

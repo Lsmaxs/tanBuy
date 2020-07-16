@@ -1,33 +1,69 @@
 import React, { Component } from 'react';
-import {Icon} from 'antd-mobile';
+import {Icon, Toast} from 'antd-mobile';
+import _ from 'loadsh';
 import {Link} from 'react-router-dom';
 import ComFooter from 'components/comFooter'
 
 import './index.scss'
 
-import tabData from 'mock/catalogsLeft.json';
-import contData from 'mock/catalogsRight.json';
+import resultData from 'mock/categorData.json';
 
 class Categories extends Component {
     constructor(props){
         super(props);
 
         this.state = {
-            currentTabId: 225510
+            currentTabId: null,
+            cacheData: null,
+            currentData: null
         }
     }
     
     componentDidMount(){
-        console.log('tabData',tabData);
-        console.log('contData',contData);
+        Toast.loading('加载中...',0.5);
+        console.log('resultData',resultData);
+        this.initCateGoriesData();
     }
 
-    toLink = ({categorys,keyWord}) =>{
-        this.props.history.push(`/search?keyWord=${encodeURIComponent(keyWord) }&categorys=${categorys}`);
+    initCateGoriesData = () =>{
+        const {currentTabId} = this.state;
+        if(!resultData){
+            Toast.error('获取分类数据失败');
+            return false
+        }
+        const {data:{list}} = resultData;
+        const curId = currentTabId?currentTabId:list[0]['id'];
+       
+        this.setState({
+            cacheData: list,
+            currentTabId: curId,
+            currentData: this.getCurrentData(list,['id',curId])
+        })
+    }
+
+    checkTab = (curId) =>{
+        const {cacheData} = this.state;
+        this.setState({
+            currentTabId: curId,
+            currentData: this.getCurrentData(cacheData,['id',curId])
+        })
+    }
+
+    getCurrentData(data,filter){
+        return data[_.findIndex(data,filter)] 
+    }
+    
+
+    toLink = ({id,keyWord}) =>{
+        this.props.history.push(`/search?keyWord=${encodeURIComponent(keyWord) }&categorys=${id}`);
     }
 
     render(){
-        const {currentTabId} = this.state;
+        const {currentTabId,currentData,cacheData} = this.state;
+        console.log('currentData:', currentData, cacheData);
+        if(!cacheData){
+            return null;
+        }
         return (
             <div className='categor-warp'>
                 <div className="categor-header border-bottom">
@@ -38,32 +74,34 @@ class Categories extends Component {
                 <div className='categor-main'>
                     <div className="categor-tab">
                         {
-                            tabData.map(item=>{
+                            cacheData.map(item=>{
                                 const {id,name} = item
                                 return (
-                                <div key={id} className={`tab-item ${id == currentTabId?'active':''}`}>{name}</div>
+                                <div key={id} className={`tab-item ${id == currentTabId?'active':''}`} onClick={()=>{
+                                    this.checkTab(id)
+                                }}>{name}</div>
                                 )
                             })
                         }
                         
                     </div>
                     <div className='categor-con'>
-                        {contData.map(item=>{
-                            const {name,categorys,subNavigations} = item;
+                        {currentData.childList.map(item=>{
+                            const {name,id,childList} = item;
                             return (
-                                <div className="content-main" key={categorys}>
+                                <div className="content-main" key={id}>
                                     <h2>{name}</h2>
                                     <ul className="content-list">
-                                        { subNavigations.map(curItem=>{
-                                             const {name,pic,categorys} = curItem;
+                                        { childList.map(curItem=>{
+                                             const {name,phUrl,id} = curItem;
                                              return (
-                                                 <div className="con-item" key={categorys} onClick={()=>{
+                                                 <div className="con-item" key={phUrl} onClick={()=>{
                                                     this.toLink({
-                                                        categorys,
+                                                        id,
                                                         keyWord: name
                                                     })
                                                  }}>
-                                                    <img src={pic} alt={name}/>
+                                                    <img src={phUrl} alt={name}/>
                                                     <p>{name}</p>
                                                  </div>
                                              )

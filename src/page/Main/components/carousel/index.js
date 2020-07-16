@@ -3,13 +3,17 @@ import Carousel from 'antd-mobile/lib/carousel';
 
 const useSlide = () => {
 
-    const [swiperData, setSwiperData] = useState(['1', '2', '3']);
+    const [swiperData, setSwiperData] = useState([
+        'https://pic.cdfg.com.cn/assets/upload/img/123940c7d84787b43168ca51a9fdbaa5.jpg', 
+        'https://pic.cdfg.com.cn/assets/upload/img/810dc86e755dc9cf2978fff040387a51.jpg', 
+        'https://pic.cdfg.com.cn/assets/upload/img/66d2934e8709615d6f185bdef56f6728.jpg'
+    ]);
     const [imgHeight, setImgHeight] = useState(176);
 
 
     useEffect(()=>{
         setTimeout(() => {
-            setSwiperData(['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'])
+            // setSwiperData(['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'])
         }, 100);
     },[])
     
@@ -25,11 +29,12 @@ const useSlide = () => {
             {swiperData.map(val => (
                 <a
                 key={val}
-                href="http://www.alipay.com"
+                // href="https://m.cdfg.com.cn/wap/index.html"
+                href="javascipt:;"
                 style={{ display: 'inline-block', width: '100%', height: imgHeight }}
                 >
                 <img
-                    src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                    src={val}
                     alt=""
                     style={{ width: '100%', verticalAlign: 'top' }}
                     onLoad={() => {

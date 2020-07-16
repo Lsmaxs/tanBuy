@@ -81,7 +81,8 @@
                     padding: 0 .2rem .2rem;
                     img{
                         display: block;
-                        width: 100%;
+                        width: 1.4rem;
+                        height: 1.4rem;
                     }
                     p{
                         @include setFontStyle('title-ms');

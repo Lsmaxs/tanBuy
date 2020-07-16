@@ -2,61 +2,14 @@ import React, { useEffect, useState } from 'react';
 import GoodIstem from 'components/goodsItem';
 
 
-const mockData = [
-    {
-        goodsId: 2769856,
-        imgUrl: 'https://pic.cdfg.com.cn/assets/upload/product/45855b9fe3c9b2bec9a115fdce4a6e31_400x400.jpg',
-        couponPolicyName: '测试',
-        goodsName: 'SK-IIPITERA基础护肤套组,基础护肤套组基础护肤套组基础护肤套组基础护肤套组基础护肤套组基础护肤套组基础护肤套组',
-        mallPrice: '9.9999',
-        marketPrice: '19.999'
-    },
-    {
-        goodsId: 27698562,
-        imgUrl: 'https://pic.cdfg.com.cn/assets/upload/product/45855b9fe3c9b2bec9a115fdce4a6e31_400x400.jpg',
-        couponPolicyName: '测试',
-        goodsName: 'SK-IIPITERA基础护肤套组',
-        mallPrice: '9.9999',
-        marketPrice: '19.999'
-    },
-    {
-        goodsId: 27698561,
-        imgUrl: 'https://pic.cdfg.com.cn/assets/upload/product/45855b9fe3c9b2bec9a115fdce4a6e31_400x400.jpg',
-        couponPolicyName: '测试',
-        goodsName: 'SK-IIPITERA基础护肤套组',
-        mallPrice: '9.9999',
-        marketPrice: '19.999'
-    },
-    {
-        goodsId: 276985,
-        imgUrl: 'https://pic.cdfg.com.cn/assets/upload/product/45855b9fe3c9b2bec9a115fdce4a6e31_400x400.jpg',
-        couponPolicyName: '测试',
-        goodsName: 'SK-IIPITERA基础护肤套组',
-        mallPrice: '9.9999',
-        marketPrice: '19.999'
-    },
-    {
-        goodsId: 276956,
-        imgUrl: 'https://pic.cdfg.com.cn/assets/upload/product/45855b9fe3c9b2bec9a115fdce4a6e31_400x400.jpg',
-        couponPolicyName: '测试',
-        goodsName: 'SK-IIPITERA基础护肤套组',
-        mallPrice: '9.9999',
-        marketPrice: '19.999'
-    }
-]
+const usePurchase = ({renderData}) => {
 
-
-const usePurchase = () => {
-
-    const [goodsListData,setGoodsListData] = useState(mockData)
+    const [goodsListData,setGoodsListData] = useState(renderData)
 
     useEffect(()=>{
-        setTimeout(() => {
-            
-        }, 100);
-    },[])
+        setGoodsListData(renderData)
+    },[renderData])
     
-  
     return (
         <div className='purchase-warp'>
             <h3> -- 缤纷夏季欢乐购 -- </h3>

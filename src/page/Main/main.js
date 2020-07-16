@@ -7,6 +7,8 @@ import Slide from './components/carousel';
 import Purchase from './components/purchase';
 
 import './index.scss'
+import { fetchGoodsList } from 'service';
+// import { Toast } from 'antd-mobile';
 // import LazyImg from 'utils/lazyImg';
 
 
@@ -14,22 +16,37 @@ class Index extends Component{
     constructor(props){
         super(props);
         this.state = {
-
+            listData:[]
         }
     }
 
     componentDidMount(){
-
+        this.getHotGoods()
         // new LazyImg();
     }
 
-    render(){
+    getHotGoods = async () =>{
+       const result = await fetchGoodsList({
+           page:1,
+           pageSize: 10
+       });
+       const {success,data} = result;
+       console.log('result',result)
+       if(success){
+           this.setState({
+               listData: data
+           })
+       }
+      
+    }
 
+    render(){
+        const {listData} = this.state;
         return (
             <div className='main-warp'>
                 <ComHeader showHeader />
                 <Slide />
-                <Purchase />
+                <Purchase renderData={listData}/>
                 <ComFooter showFooter curClass="activeIndex"/>
             </div>
         )

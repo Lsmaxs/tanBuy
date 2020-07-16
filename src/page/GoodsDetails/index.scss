@@ -34,6 +34,12 @@
                     i{
                         font-size: .22rem;
                     }
+                    span{
+                        font-size: .22rem;
+                        color:#666;
+                        font-weight: normal;
+                        text-decoration: line-through;
+                    }
                 }
                 h3{
                     margin: .2rem 0;
@@ -93,10 +99,16 @@
                     
                 }
             }
+
+            .tips-mf p{
+                color:#FF5424;
+            }
         }
         
         .detail-content{
             margin-top: .2rem;
+            padding: .3rem;
+            background: #fff;
 
             img{
                 max-width: 100%;
